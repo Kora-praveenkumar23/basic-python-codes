@@ -1,0 +1,80 @@
+1. ✅ Print Hello World
+print("Hello, World!")
+2. ✅ Add Two Numbers
+a = int(input())
+b = int(input())
+print(a + b)
+3. ✅ Check Even or Odd
+n = int(input())
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+4. ✅ Find Largest of Two Numbers
+a = int(input())
+b = int(input())
+
+if a > b:
+    print(a)
+else:
+    print(b)
+5. ✅ Print Multiplication Table
+n = int(input())
+for i in range(1, 11):
+    print(n * i)
+6. ✅ Factorial of a Number
+n = int(input())
+fact = 1
+
+for i in range(1, n+1):
+    fact *= i
+
+print(fact)
+7. ✅ Sum of First N Natural Numbers
+n = int(input())
+sum = 0
+
+for i in range(1, n+1):
+    sum += i
+
+print(sum)
+8. ✅ Check Prime Number
+n = int(input())
+flag = True
+
+if n <= 1:
+    flag = False
+else:
+    for i in range(2, n):
+        if n % i == 0:
+            flag = False
+            break
+
+if flag:
+    print("Prime")
+else:
+    print("Not Prime")
+9. ✅ Reverse a Number
+n = int(input())
+rev = 0
+
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n //= 10
+
+print(rev)
+10. ✅ Check Palindrome Number
+n = int(input())
+temp = n
+rev = 0
+
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n //= 10
+
+if temp == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
