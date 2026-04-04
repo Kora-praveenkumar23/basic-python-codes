@@ -78,3 +78,18 @@ if temp == rev:
     print("Palindrome")
 else:
     print("Not Palindrome")
+=> whether a person is eligible to vote
+answer:
+    age = int(input("Enter your age: "))
+
+    # Check if age meets the requirement (typically 18+)
+    if age >= 18:
+        print("You are eligible to vote!")
+    elif age < 0:
+        print("Invalid age. Please enter a positive number.")
+    else:
+        print("You are not eligible to vote yet.")
+        
+except ValueError:
+    print("Error: Please enter a valid numerical age.")
+
