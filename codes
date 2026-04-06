@@ -92,4 +92,16 @@ answer:
         
 except ValueError:
     print("Error: Please enter a valid numerical age.")
+=>To find the maximum element from an array
+answer:
+numbers = [10, 24, 76, 23, 12]
+if not numbers:
+    largest = None
+else:
+    largest = numbers[0]  # Initialize with the first element
+    for num in numbers:
+        if num > largest:
+            largest = num
+print(largest)  # Output: 76
+
 
